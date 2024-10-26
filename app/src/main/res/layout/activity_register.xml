@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_input_background"
+        android:hint="Phone Number"
+        android:paddingStart="20dp"
+        android:shadowRadius="200"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_input_background"
+        android:hint="Valid Email"
+        android:paddingStart="20dp"
+        android:shadowRadius="200"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_input_background"
+        android:hint="Strong Password"
+        android:paddingStart="20dp"
+        android:shadowRadius="200"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_input_background"
+        android:hint="Full Name"
+        android:paddingStart="20dp"
+        android:shadowRadius="200"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By checking this box you agree to our"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and"
+        android:textColor="#000"
+        android:textSize="10dp"
+
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms"
+        android:textColor="#6C63FF"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_meat" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conditions"
+        android:textColor="#6C63FF"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+
+</androidx.constraintlayout.widget.ConstraintLayout>
