@@ -69,4 +69,14 @@
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo_2024_10_26_16_28_06" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
