@@ -8,18 +8,18 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="280dp"
-        android:layout_height="53dp"
+        android:layout_height="60dp"
         android:textColorHint="#9E9E9E"
-        android:background="@drawable/text_input_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/text_input_background"
             android:id="@+id/editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:hint="Enter Your Email" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -30,14 +30,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
         android:textColorHint="#9E9E9E"
-        android:background="@drawable/text_input_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="288dp"
-            android:layout_height="53dp"
+            android:background="@drawable/text_input_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
