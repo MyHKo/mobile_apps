@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             android:hint="Strong password" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/next"
         android:layout_width="330dp"
         android:layout_height="56dp"
@@ -106,7 +106,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/terms_and_conditions_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -115,7 +115,7 @@
         app:layout_constraintStart_toStartOf="@+id/password_layout"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
         app:layout_constraintStart_toEndOf="@id/terms_and_conditions_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/and"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
         app:layout_constraintStart_toEndOf="@id/terms"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/conditions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
         app:layout_constraintStart_toEndOf="@id/terms"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/already_a_member"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="@+id/next"
         app:layout_constraintTop_toBottomOf="@+id/next" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -173,7 +173,7 @@
         app:layout_constraintStart_toEndOf="@+id/already_a_member"
         app:layout_constraintTop_toBottomOf="@+id/next" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Started"
@@ -186,7 +186,7 @@
         app:layout_constraintStart_toStartOf="@+id/logo_image"
         app:layout_constraintTop_toTopOf="@+id/logo_image" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="by creating a free account"
