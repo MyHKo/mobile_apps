@@ -22,6 +22,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/user"
             android:hint="Enter Your Email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/mail"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 

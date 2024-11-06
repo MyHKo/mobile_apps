@@ -31,6 +31,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/user"
             android:hint="Full name" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/mail"
             android:hint="Valid email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/smartphone"
             android:hint="Phone number" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,6 +91,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/text_input_background"
+            android:drawableEnd="@drawable/lock"
             android:hint="Strong password" />
     </com.google.android.material.textfield.TextInputLayout>
 
