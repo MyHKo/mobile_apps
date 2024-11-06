@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/email_layout"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:textColorHint="#9E9E9E"
@@ -18,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText"
+            android:id="@+id/email_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -27,16 +26,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/password_layout"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
         android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/email_layout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/text_input_background"
@@ -44,7 +44,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/next"
         android:layout_width="330dp"
         android:layout_height="56dp"
         android:layout_marginBottom="70dp"
@@ -56,13 +56,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/remember_me_checkbox"
         android:layout_width="wrap_content"
         android:textSize="10dp"
         android:layout_height="30dp"
         android:text="Remember me"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintStart_toStartOf="@+id/password_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,8 +71,8 @@
         android:layout_marginTop="16dp"
         android:text="New Member?"
         android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,8 +81,8 @@
         android:layout_marginEnd="80dp"
         android:text="Register Now"
         android:textColor="#6C63FF"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,8 +91,8 @@
         android:text="Forgot Password?"
         android:textSize="10dp"
         android:textColor="#6C63FF"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintEnd_toEndOf="@+id/password_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -102,10 +102,10 @@
         android:text="Welcome Back"
         android:textColor="#000"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_image"
+        app:layout_constraintEnd_toEndOf="@+id/logo_image"
+        app:layout_constraintStart_toStartOf="@+id/logo_image"
+        app:layout_constraintTop_toTopOf="@+id/logo_image"
         app:layout_constraintVertical_bias="0.561" />
 
     <TextView
@@ -116,14 +116,14 @@
         android:text="sign in to access your account"
         android:textColor="#000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_image"
+        app:layout_constraintEnd_toEndOf="@+id/logo_image"
+        app:layout_constraintStart_toStartOf="@+id/logo_image"
+        app:layout_constraintTop_toTopOf="@+id/logo_image"
         app:layout_constraintVertical_bias="0.561" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
