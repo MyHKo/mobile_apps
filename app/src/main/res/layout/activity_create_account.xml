@@ -10,14 +10,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/photo_2024_10_27_11_26_15" />
+        app:srcCompat="@drawable/logo_image" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="280dp"
+        android:layout_width="330dp"
         android:layout_height="60dp"
         android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        android:layout_width="280dp"
+        android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:textColorHint="#9E9E9E"
@@ -54,7 +55,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        android:layout_width="280dp"
+        android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:textColorHint="#9E9E9E"
@@ -73,7 +74,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
-        android:layout_width="280dp"
+        android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:textColorHint="#9E9E9E"
@@ -92,7 +93,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="280dp"
+        android:layout_width="330dp"
         android:layout_height="56dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/button_background"
@@ -150,7 +151,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="16dp"
         android:text="Already a member?"
         android:textColor="#000"
@@ -160,11 +161,37 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="16dp"
         android:text="Log In"
         android:textColor="#6C63FF"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textColor="#000"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="110dp"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by creating a free account"
+        android:textColor="#000"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="120dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
