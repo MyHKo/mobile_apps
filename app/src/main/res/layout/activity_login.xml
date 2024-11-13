@@ -66,6 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/next" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
