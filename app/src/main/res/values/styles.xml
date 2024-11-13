@@ -4,7 +4,7 @@
     <style name="input_field_layout">
         <item name="android:layout_width">330dp</item>
         <item name="android:layout_height">60dp</item>
-        <item name="android:textColorHint">9E9E9E</item>
+        <item name="android:textColorHint">#9E9E9E</item>
     </style>
 
     <style name="input_field_text">
