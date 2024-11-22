@@ -1,8 +1,14 @@
-// Put your package name here. Check your activity for reference.
 package com.example.myapplication
 
 class CredentialsManager {
-    fun isEmailValid(email: String) {
+    companion object {
+        fun isEmailValid(email: String): Boolean {
+            val emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\$"
+            return email.matches(emailRegex.toRegex())
+        }
 
+        fun isPasswordValid(password: String): Boolean {
+            return password.isNotEmpty()
+        }
     }
 }
