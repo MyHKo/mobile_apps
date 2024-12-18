@@ -2,16 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/main">
+    android:layout_height="match_parent">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +28,7 @@
             android:id="@+id/full_name_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/user"
-            android:hint="Full name" />
+            android:hint="@string/name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +43,7 @@
             android:id="@+id/email_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/mail"
-            android:hint="Valid email" />
+            android:hint="@string/email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -58,7 +58,7 @@
             android:id="@+id/phone_number_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/smartphone"
-            android:hint="Phone number" />
+            android:hint="@string/phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -73,14 +73,14 @@
             android:id="@+id/password_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/lock"
-            android:hint="Strong password" />
+            android:hint="@string/strong_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/next"
         style="@style/next_button"
         android:layout_marginBottom="70dp"
-        android:text="NEXT"
+        android:text="@string/next_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -89,7 +89,7 @@
         android:id="@+id/terms_and_conditions_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="By checking this box you accept"
+        android:text="@string/checking_box"
         android:textSize="7dp"
         app:layout_constraintStart_toStartOf="@+id/password_layout"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="Terms"
+        android:text="@string/terms"
         android:textColor="#6C63FF"
         android:textSize="10dp"
         app:layout_constraintStart_toEndOf="@id/terms_and_conditions_checkbox"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="10dp"
-        android:text="and"
+        android:text="@string/and"
         android:textColor="#000"
         android:textSize="7dp"
         app:layout_constraintStart_toEndOf="@id/terms"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:text="Conditions"
+        android:text="@string/conditions"
         android:textColor="#6C63FF"
         android:textSize="10dp"
         app:layout_constraintStart_toEndOf="@id/terms"
@@ -136,7 +136,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="75dp"
         android:layout_marginTop="16dp"
-        android:text="Already a member?"
+        android:text="@string/already_a_member"
         android:textColor="#000"
         app:layout_constraintStart_toStartOf="@+id/next"
         app:layout_constraintTop_toBottomOf="@+id/next" />
@@ -147,7 +147,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="16dp"
-        android:text="Log In"
+        android:text="@string/log_in_member"
         android:textColor="#6C63FF"
         app:layout_constraintStart_toEndOf="@+id/already_a_member"
         app:layout_constraintTop_toBottomOf="@+id/next" />
@@ -155,10 +155,10 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Started"
-        android:textColor="#000"
         android:layout_marginTop="60dp"
         android:layout_marginRight="110dp"
+        android:text="@string/get_started_title"
+        android:textColor="#000"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/logo_image"
         app:layout_constraintEnd_toEndOf="@+id/logo_image"
@@ -168,10 +168,10 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="by creating a free account"
-        android:textColor="#000"
         android:layout_marginTop="130dp"
         android:layout_marginRight="120dp"
+        android:text="@string/create_free_account"
+        android:textColor="#000"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/logo_image"
         app:layout_constraintEnd_toEndOf="@+id/logo_image"
