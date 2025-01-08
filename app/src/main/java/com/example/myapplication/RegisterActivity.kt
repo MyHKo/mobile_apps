@@ -1,67 +1,51 @@
 package com.example.myapplication
 
-import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.CheckBox
+import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import com.google.android.material.textview.MaterialTextView
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity : Fragment() {
     private val credentialsManager: CredentialsManager = CredentialsManager()
-
-    private val fullNameField: TextInputEditText
-        get() = findViewById(R.id.full_name_text)
-    private val fullNameLayout: TextInputLayout
-        get() = findViewById(R.id.full_name_layout)
-    private val emailField: TextInputEditText
-        get() = findViewById(R.id.email_text)
-    private val emailLayout: TextInputLayout
-        get() = findViewById(R.id.email_layout)
-    private val phoneField: TextInputEditText
-        get() = findViewById(R.id.phone_number_text)
-    private val phoneLayout: TextInputLayout
-        get() = findViewById(R.id.phone_number_layout)
-    private val passwordField: TextInputEditText
-        get() = findViewById(R.id.password_text)
-    private val passwordLayout: TextInputLayout
-        get() = findViewById(R.id.password_layout)
-    private val termsCheckBox: CheckBox
-        get() = findViewById(R.id.terms_and_conditions_checkbox)
-    private val nextButton: MaterialButton
-        get() = findViewById(R.id.next)
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_create_account)
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+    private lateinit var fullNameField: TextInputEditText
+    private lateinit var fullNameLayout: TextInputLayout
+    private lateinit var emailField: TextInputEditText
+    private lateinit var emailLayout: TextInputLayout
+    private lateinit var phoneField: TextInputEditText
+    private lateinit var phoneLayout: TextInputLayout
+    private lateinit var passwordField: TextInputEditText
+    private lateinit var passwordLayout: TextInputLayout
+    private lateinit var termsCheckBox: CheckBox
+    private lateinit var nextButton: MaterialButton
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.activity_create_account, container, false)
+        fullNameField = view.findViewById(R.id.full_name_text)
+        fullNameLayout = view.findViewById(R.id.full_name_layout)
+        emailField = view.findViewById(R.id.email_text)
+        emailLayout = view.findViewById(R.id.email_layout)
+        phoneField = view.findViewById(R.id.phone_number_text)
+        phoneLayout = view.findViewById(R.id.phone_number_layout)
+        passwordField = view.findViewById(R.id.password_text)
+        passwordLayout = view.findViewById(R.id.password_layout)
+        termsCheckBox = view.findViewById(R.id.terms_and_conditions_checkbox)
+        nextButton = view.findViewById(R.id.next)
+        nextButton.setOnClickListener { handleNextButtonClick() }
+        view.findViewById<TextView>(R.id.log_in).setOnClickListener {
+            navigateToLogin()
         }
-
-        val logInTextButton: MaterialTextView = findViewById(R.id.log_in)
-
-        logInTextButton.setOnClickListener {
-            val intent = Intent(this, LogInActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        nextButton.setOnClickListener {
-            handleNextButtonClick()
-        }
+        return view
     }
-
-    private fun handleNextButtonClick() {
+        private fun handleNextButtonClick() {
         val fullName = fullNameField.text.toString().trim()
         val email = emailField.text.toString().trim()
         val phone = phoneField.text.toString().trim()
@@ -113,6 +97,7 @@ class RegisterActivity : AppCompatActivity() {
             )
         ) {
             showToast(getString(R.string.successful_log_in))
+            parentFragmentManager.popBackStack()
         } else {
             showToast(getString(R.string.credentials_not_matched))
         }
@@ -127,6 +112,9 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+    }
+    private fun navigateToLogin() {
+        parentFragmentManager.popBackStack()
     }
 }
