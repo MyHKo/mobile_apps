@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/main">
+    android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_layout"
@@ -18,7 +18,7 @@
             android:id="@+id/email_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/user"
-            android:hint="Enter Your Email" />
+            android:hint="@string/enter_email_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -33,7 +33,7 @@
             android:id="@+id/password_text"
             style="@style/input_field_text"
             android:drawableEnd="@drawable/mail"
-            android:hint="Password" />
+            android:hint="@string/password_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -41,7 +41,7 @@
         style="@style/next_button"
         android:layout_marginBottom="70dp"
         android:backgroundTint="@color/black"
-        android:text="NEXT"
+        android:text="@string/next_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,9 +49,9 @@
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/remember_me_checkbox"
         android:layout_width="wrap_content"
-        android:textSize="10dp"
         android:layout_height="30dp"
-        android:text="Remember me"
+        android:text="@string/remember_me_checkbox"
+        android:textSize="10dp"
         app:layout_constraintStart_toStartOf="@+id/password_layout"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
@@ -60,7 +60,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="16dp"
-        android:text="New Member?"
+        android:text="@string/new_member"
         android:textColor="#000"
         app:layout_constraintStart_toStartOf="@+id/next"
         app:layout_constraintTop_toBottomOf="@+id/next" />
@@ -71,7 +71,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="80dp"
-        android:text="Register Now"
+        android:text="@string/register"
         android:textColor="#6C63FF"
         app:layout_constraintEnd_toEndOf="@+id/next"
         app:layout_constraintTop_toBottomOf="@+id/next" />
@@ -80,9 +80,9 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
-        android:text="Forgot Password?"
-        android:textSize="10dp"
+        android:text="@string/forgot_password"
         android:textColor="#6C63FF"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/password_layout"
         app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
@@ -91,7 +91,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="50dp"
-        android:text="Welcome Back"
+        android:text="@string/login_welcome"
         android:textColor="#000"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/logo_image"
@@ -105,7 +105,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="130dp"
         android:layout_marginRight="30dp"
-        android:text="sign in to access your account"
+        android:text="@string/sign_in"
         android:textColor="#000"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/logo_image"
@@ -115,7 +115,7 @@
         app:layout_constraintVertical_bias="0.561" />
 
     <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/logo_image"
+        android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

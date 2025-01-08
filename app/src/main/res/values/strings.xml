@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="new_member">New Member?</string>
+    <string name="enter_email_hint">Enter Your Email</string>
+    <string name="password_hint">Password</string>
+    <string name="next_button">NEXT</string>
+    <string name="remember_me_checkbox">Remember me</string>
+    <string name="register">Register Now</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_welcome">Welcome Back</string>
+    <string name="sign_in">sign in to access your account</string>
+    <string name="name">Full Name</string>
+    <string name="log_in_member">Log In</string>
+    <string name="email">Valid Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="and">and</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="checking_box">By checking this box you accept</string>
+    <string name="create_free_account">by creating a free account</string>
+    <string name="terms">Terms</string>
+    <string name="conditions">Conditions</string>
+    <string name="get_started_title">Get Started</string>
+    <string name="strong_password">Strong Password</string>
+    <string name="error_empty_email">Email field must be filled</string>
+    <string name="error_invalid_email">Incorrect email format</string>
+    <string name="error_password_empty">Password is required</string>
+    <string name="error_password_invalid">Password must be at least 8 characters with special character and numbers</string>
+    <string name="terms_and_conditions_check">Please check the Terms and Conditions box</string>
+    <string name="successful_log_in">Signed in</string>
+    <string name="name_field_empty">Name field empty - Please enter your name</string>
+    <string name="phone_number_error">Phone number must be at least 9 digits</string>
+    <string name="credentials_not_matched">Credentials do not exist</string>
 </resources>
